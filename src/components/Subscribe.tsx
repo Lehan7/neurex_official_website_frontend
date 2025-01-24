@@ -10,7 +10,7 @@ const Subscribe = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://neurex-official.vercel.app/api/subscribe", {
+      const response = await fetch("https://neurex-official-website-server-main.vercel.app/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
