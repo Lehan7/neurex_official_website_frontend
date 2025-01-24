@@ -40,7 +40,7 @@ const RegisterModal: React.FC<RegisterModalProps> = ({ isOpen, onClose, society 
 
     try {
       // Send data to the backend
-      const response = await axios.post("http://localhost:5000/api/register", {
+      const response = await axios.post("https://neurex-official.vercel.app/api/register", {
         ...formData,
         society: society.title,
       });
