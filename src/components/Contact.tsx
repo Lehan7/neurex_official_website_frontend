@@ -28,7 +28,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://neurex-official.vercel.app/api/sendEmail', {
+      const response = await fetch('https://neurex-official-website-server-main.vercel.app/api/sendEmail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
